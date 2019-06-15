@@ -1,0 +1,72 @@
+Maximize
+expression1: p1 + p2 + p3 + p4 + p5 + p6
+Subject To
+expression2: p1 - u1 <= 0
+expression3: p2 + p2 - u2 <= 0
+expression4: p3 + p3 + p3 - u3 <= 0
+expression5: p4 + p4 + p4 + p4 - u4 <= 0
+expression6: p5 + p5 + p5 + p5 + p5 - u5 <= 0
+expression7: p6 + p6 + p6 + p6 + p6 + p6 - u6 <= 0
+expression8: z_1_1_2 + z_1_1_1 = 1
+expression9: z_2_1_1 = 1
+expression10: z_1_2_2 + z_1_2_1 = 1
+expression11: z_1_1_2 + z_1_2_2 = 1
+expression12: z_2_1_1 = 1
+expression13: z_1_1_1 + z_1_2_1 = 1
+expression14: u1 - u4 + z_1_1_1 <= 1
+expression15: u4 - u1 + z_1_1_1 + z_1_1_1 + z_1_1_1 + z_1_1_1 <= 4
+expression16: u2 - u5 + z_1_1_1 + z_1_1_1 <= 2
+expression17: u5 - u2 + z_1_1_1 + z_1_1_1 + z_1_1_1 + z_1_1_1 + z_1_1_1 <= 5
+expression18: u1 - u6 + z_1_1_2 <= 1
+expression19: u6 - u1 + z_1_1_2 + z_1_1_2 + z_1_1_2 + z_1_1_2 + z_1_1_2 + z_1_1_2 <= 6
+expression20: u2 - u4 + z_1_1_2 + z_1_1_2 <= 2
+expression21: u4 - u2 + z_1_1_2 + z_1_1_2 + z_1_1_2 + z_1_1_2 <= 4
+expression22: u3 - u5 + z_2_1_1 + z_2_1_1 + z_2_1_1 <= 3
+expression23: u5 - u3 + z_2_1_1 + z_2_1_1 + z_2_1_1 + z_2_1_1 + z_2_1_1 <= 5
+expression24: u2 - u6 + z_2_1_1 + z_2_1_1 <= 2
+expression25: u6 - u2 + z_2_1_1 + z_2_1_1 + z_2_1_1 + z_2_1_1 + z_2_1_1 + z_2_1_1 <= 6
+expression26: u3 - u4 + z_1_2_1 + z_1_2_1 + z_1_2_1 <= 3
+expression27: u4 - u3 + z_1_2_1 + z_1_2_1 + z_1_2_1 + z_1_2_1 <= 4
+expression28: u1 - u5 + z_1_2_1 <= 1
+expression29: u5 - u1 + z_1_2_1 + z_1_2_1 + z_1_2_1 + z_1_2_1 + z_1_2_1 <= 5
+expression30: u3 - u6 + z_1_2_2 + z_1_2_2 + z_1_2_2 <= 3
+expression31: u6 - u3 + z_1_2_2 + z_1_2_2 + z_1_2_2 + z_1_2_2 + z_1_2_2 + z_1_2_2 <= 6
+expression32: u1 - u4 + z_1_2_2 <= 1
+expression33: u4 - u1 + z_1_2_2 + z_1_2_2 + z_1_2_2 + z_1_2_2 <= 4
+Bounds
+0 <= p1 <= 1
+0 <= p2 <= 1
+0 <= p3 <= 1
+0 <= p4 <= 1
+0 <= p5 <= 1
+0 <= p6 <= 1
+0 <= u1 <= 1
+0 <= u2 <= 2
+0 <= u3 <= 3
+0 <= u4 <= 4
+0 <= u5 <= 5
+0 <= u6 <= 6
+0 <= z_1_1_2 <= 1
+0 <= z_1_1_1 <= 1
+0 <= z_2_1_1 <= 1
+0 <= z_1_2_2 <= 1
+0 <= z_1_2_1 <= 1
+General
+p1
+p2
+p3
+p4
+p5
+p6
+u1
+u2
+u3
+u4
+u5
+u6
+z_1_1_2
+z_1_1_1
+z_2_1_1
+z_1_2_2
+z_1_2_1
+End
